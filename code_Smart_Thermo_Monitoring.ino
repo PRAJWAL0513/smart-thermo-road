@@ -3,11 +3,11 @@
 #define heaterPin D13
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 float val, voltage, temp;
-String ssid     = "Simulator Wifi";  // SSID to connect to
-String password = ""; // Virtual WiFi has no password 
-String host     = "api.thingspeak.com"; // ThingSpeak API
+String ssid     = "Simulator Wifi";  	// SSID to connect to
+String password = ""; 	// Virtual WiFi has no password 
+String host     = "api.thingspeak.com"; 	// ThingSpeak API
 const int httpPort = 80;
-String url = "/update?api_key=OHBDO2F31XIIAED2&field1=";
+String url = "<api_key>";	// API Key
 
 void setupESP8266() {
   Serial.begin(115200);
